@@ -3,7 +3,7 @@ function Pets({petForSale}){
     return(
         <div className="pets">
             {petForSale.map((pet)=>{
-                const {id, name, searchTerm, price, image} = pet;
+                const {id, name, price, image} = pet;
                 return(
                     <div className="pet-card" key={id}>
                         <img src={image} alt="pet" width='300'/>
